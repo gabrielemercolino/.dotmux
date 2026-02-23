@@ -1,0 +1,23 @@
+#/bin/env bash
+
+GREEN="\033[0;32m"
+RESET="\033[0m"
+
+header() {
+	echo ""
+	echo "${GREEN}${1}${RESET}"
+	echo ""
+}
+
+header "[1/4] Updating packages..."
+pkg update -y
+pkg upgrade -y
+
+header "[2/4] Installing necessary packages"
+pkg install -y git zsh yazi htop stow
+
+header "[3/4] Link dotfiles"
+stow .
+
+header "[4/4] Set zsh as default shell"
+chsh -s zsh

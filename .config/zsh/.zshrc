@@ -27,3 +27,6 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main)
 # Alias
 alias cd='z'
 alias l='eza -la --icons'
+
+# Autostart
+fastfetch

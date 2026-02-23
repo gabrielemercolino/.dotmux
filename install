@@ -14,7 +14,7 @@ pkg update -y
 pkg upgrade -y
 
 header "[2/4] Installing necessary packages"
-pkg install -y git zsh yazi htop stow
+pkg install -y git zsh yazi htop stow fastfetch\
 
 header "[3/4] Link dotfiles"
 stow .

@@ -1,2 +1,4 @@
 .config/zsh/.zsh_history
 .config/zsh/.zcompdump
+
+.termux/shell

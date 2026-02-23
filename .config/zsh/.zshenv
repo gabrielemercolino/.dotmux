@@ -1,4 +1,5 @@
 # Env vars
+export EDITOR="hx"
 
 # Only source this once
 if [[ -z "$__HM_ZSH_SESS_VARS_SOURCED" ]]; then

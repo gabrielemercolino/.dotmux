@@ -12,10 +12,18 @@ pkg update -y
 pkg upgrade -y
 
 header "[2/4] Installing necessary packages"
-pkg install -y git zsh yazi htop stow fastfetch\
+pkg install -y git zsh yazi htop stow fastfetch file oh-my-posh helix
 
 header "[3/4] Link dotfiles"
 stow .
 
 header "[4/4] Set zsh as default shell"
 chsh -s zsh
+
+if [[ ! -e "$HOME/.config/zsh/plugins/zsh-autosuggestions" ]]; then
+	git clone https://github.com/zsh-users/zsh-autosuggestions ~/.config/zsh/plugins/zsh-autosuggestions
+fi
+
+if [[ ! -e "$HOME/.config/zsh/plugins/zsh-syntax-highlighting" ]]; then
+	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.config/zsh/plugins/zsh-syntax-highlighting
+fi

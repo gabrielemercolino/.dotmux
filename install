@@ -2,9 +2,9 @@ GREEN="\033[0;32m"
 RESET="\033[0m"
 
 header() {
-	echo ""
-	echo "${GREEN}${1}${RESET}"
-	echo ""
+	echo -e ""
+	echo -e "${GREEN}${1}${RESET}"
+	echo -e ""
 }
 
 header "[1/4] Updating packages..."

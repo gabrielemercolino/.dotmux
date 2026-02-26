@@ -12,7 +12,7 @@ pkg update -y
 pkg upgrade -y
 
 header "[2/4] Installing necessary packages"
-pkg install -y git zsh yazi htop stow fastfetch file oh-my-posh helix
+pkg install -y git zsh yazi htop stow fastfetch file oh-my-posh helix eza
 
 header "[3/4] Link dotfiles"
 stow .
